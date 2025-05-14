@@ -12,9 +12,9 @@ function Nav() {
                 </Link>
             </div>
             <ul className="nav-links">
-                <li><Link className="nav-link" to="/AboutUs">Nosotros</Link></li> 
+                <li><Link className="nav-link" to="AboutUs">Nosotros</Link></li> 
                 <li><Link className="nav-link" to="/">Inicio</Link></li>
-                <li><Link className="nav-link" to="/contacto">Contacto</Link></li>
+                <li><Link className="nav-link" to="/Contacto">Contacto</Link></li>
                 <li><Link className="nav-link" to="/productos">Productos</Link></li>  
                 <li><Link className="nav-link" to="/carrito">Carrito</Link></li>  
             </ul>

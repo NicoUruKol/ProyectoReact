@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './Component/Nav';
 import ProductosContainer from './Component/ProductosConteiner';
 import Carrito from './Component/Carrito';
+import AboutUs from './Component/AboutUs';
+import Contacto from './Component/Contacto';
+
 
 function App() {
   const [productosCarrito, setProductosCarrito] = useState([])
@@ -36,18 +39,22 @@ function vaciarCarrito() {
     setProductosCarrito([]);
 }
 
-
-
   return (
     <Router>
       <div>
         <Nav/>
         <Routes>
+          <Route path='/aboutus' element={<AboutUs/>}/>
           <Route path="/" element={<Home />} />
-          <Route path="/productos" element={<ProductosContainer productosCarrito={productosCarrito}
-                                                                setProductosCarrito={setProductosCarrito}
-                                                                funcionCarrito={funcionCarrito}/>} />
-          <Route path="/carrito" element={<Carrito productos={productosCarrito} eliminarProducto={eliminarProducto} vaciarCarrito={vaciarCarrito}/>} />
+          <Route path="/productos" element={<ProductosContainer 
+            productosCarrito={productosCarrito}
+            setProductosCarrito={setProductosCarrito}
+            funcionCarrito={funcionCarrito}/>} />
+          <Route path='/contacto' element={<Contacto/>}/>
+          <Route path="/carrito" element={<Carrito 
+            productos={productosCarrito} 
+            eliminarProducto={eliminarProducto} 
+            vaciarCarrito={vaciarCarrito}/>} />
         </Routes>
       </div>
     </Router>
