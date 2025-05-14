@@ -1,8 +1,16 @@
+import '../styles/Main.css';
+import Banner from './Main/banner';
+import BodegaMes from './Main/bodegaMes';
+import Corte from './Main/corte';
+
+
 function Main() {  
-    return (  
-        <main style={{ padding: "20px", width: "818px", justifySelf:"center" }}>  
-            <h2>Contenido Principal</h2>  
-            <p>Este es un ejemplo de contenido dentro del área principal.</p>  
+    return ( 
+        <main>  
+            <Corte/>
+            <Banner/>
+            <BodegaMes/>
+            <Corte/>
         </main>  
     );  
 }  

@@ -6,6 +6,7 @@ function Header() {
             <p>Bienvenidos a</p>
             <h1><strong>Tannat & CO.</strong></h1>
             <p><strong>Alma Oriental</strong></p>
+            <p><strong>Tu tienda de vinos</strong></p>
         </header>
     );  
 }  

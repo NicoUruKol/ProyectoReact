@@ -1,18 +1,25 @@
 import { Link } from "react-router-dom";
+import "../styles/nav.css";
 
 
-function Nav(){
+
+function Nav() {
     return (  
-        <nav style={{ backgroundColor: "bisque", color: "black", padding: "10px", width: "818px", justifySelf: "center",
-            border: "solid 2px rgb(236, 192, 14)", borderRadius:"8px", marginBottom: "2px"
-        }}>  
-            <ul style={{ listStyle: "none", display: "flex", justifyContent: "space-around", margin: 0 }}>  
-                <li><Link to="/" style={{ color: "black", textDecoration: "none" }}>Inicio</Link></li>  
-                <li><Link to="/productos" style={{ color: "black", textDecoration: "none" }}>Productos</Link></li>  
-                <li><Link to="/carrito" style={{ color: "black", textDecoration: "none" }}>Carrito</Link></li>  
-            </ul>  
+        <nav className="nav-container">  
+            <div className="nav-logo">
+                <Link to="/">
+                    <img src="logo_photoshop_LARGO.png" alt="TANNAT&CO" className="logo-img" />
+                </Link>
+            </div>
+            <ul className="nav-links">
+                <li><Link className="nav-link" to="/AboutUs">Nosotros</Link></li> 
+                <li><Link className="nav-link" to="/">Inicio</Link></li>
+                <li><Link className="nav-link" to="/contacto">Contacto</Link></li>
+                <li><Link className="nav-link" to="/productos">Productos</Link></li>  
+                <li><Link className="nav-link" to="/carrito">Carrito</Link></li>  
+            </ul>
         </nav>  
     );  
-}  
+}
 
 export default Nav
