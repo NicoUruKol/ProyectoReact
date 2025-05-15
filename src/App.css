@@ -1,0 +1,34 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  --color-separador: rgb(87,27,45);
+  --color-fondo: rgb(245,245,245);
+  --color-foot: rgb(210,210,210);
+  --color-header: rgb(237, 227, 206);
+  --color-boxShadow: rgba(87,27,45, 2);
+  --color-resenaContainer: rgba(237, 227, 206, 0.5);
+  --color-resenaPerse: rgba(210, 210, 210, 0.5);
+  font-size: 1rem;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h2 {
+    width: 100%;
+    background-color: var(--color-separador);
+    color: var(--color-fondo);
+    text-align: center;
+    height: 4rem;
+    align-content: center;
+    font-size: 2rem;
+    font-family: "Libre Caslon Text";
+    }
