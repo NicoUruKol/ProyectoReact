@@ -5,18 +5,18 @@
     justify-content: center;
     gap: 2px;
     margin-top: 8px;
-    width: 920px;
+    width: 70rem;
     justify-self: center;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .productos-card{
-    background-color: bisque;
-    border: 2px solid rgb(236, 192, 14);
+    background-color: var(--color-header);
+    border: 2px solid var(--color-separador);
     border-radius: 8px;
-    width: 220px;
+    width: 15rem;
     text-align: center;
-    color: black;
+    color: var(--color-separador);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,12 +24,12 @@
 
 .productos-image{
     width: 100px;
-    height: 150px;
+    height: 8rem;
     border-radius: 8%;
     object-fit: contain;
     background-color: white;
     margin-top: 3px;
-    border: 2px solid rgb(236, 192, 14);
+    border: 2px solid var(--color-separador);
     justify-self: center;
 }
 
@@ -37,17 +37,17 @@
     margin-top: auto;
     font-weight: bold;
     font-size: 1.1rem;
-    color: black;
+    color: var(--color-separador);
     
 }
 
 .productos-boton{
     border-radius: 8px;
-    width: 160px;
+    width: 5rem;
     margin-bottom: 2px;
     margin-top: 2px;
-    border-color: black;
-    background-color: rgb(236, 192, 14);
-    color: black;
+    border-color: var(--color-separador);
+    background-color: var(--color-separador);
+    color: var(--color-header);
     margin-bottom: 4px;
 }

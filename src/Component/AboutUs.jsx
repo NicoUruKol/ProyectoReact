@@ -1,14 +1,24 @@
+import Header from "./Header";
+import Corte from "./Main/corte";
+import "../styles/aboutus.css"
+import Nosotros from "./AboutUs/nosotros";
+import Uruguay1 from "./AboutUs/uruguay-1";
+import Uruguay2 from "./AboutUs/uruguay-2";
+import Uruguay3 from "./AboutUs/uruguay-3";
+import Uruguay4 from "./AboutUs/uruguay-4";
+
 
 export default function AboutUs() {
     return(
-        <section style={{padding:"20px"}}>
-            <h2>Sobre Nosotros</h2>
-            <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-            <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-        </section>
+        <main>
+            <Header/>
+            <Nosotros/>
+            <Uruguay1/>
+            <Uruguay2/>
+            <Uruguay3/>
+            <Uruguay4/>
+            <Corte/>
+        </main>
+        
     );
 }

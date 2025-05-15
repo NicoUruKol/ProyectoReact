@@ -49,7 +49,7 @@ export default function BodegaMes(){
                 <div className="modal" onClick={cerrarModal}>
                 <span className="cerrar" onClick={cerrarModal}>&times;</span>
                 <img className="modal-contenido" src={imagenModal} alt="Ampliada"
-                onClick={(e) => e.stopPropagation()} // <- este es el truco
+                onClick={(e) => e.stopPropagation()}
                 />
         </div>
     )}
