@@ -1,5 +1,5 @@
 export default function Contacto(){
     return(
-        <>Contacto en desarrollo</>
+        <>Contacto en desarrollo, disculpe!</>
     );
 }
