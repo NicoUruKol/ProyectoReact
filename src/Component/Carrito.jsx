@@ -1,7 +1,6 @@
 import "../styles/carrito.css"
 
 export default function Carrito({ productos, vaciarCarrito, eliminarProducto }) {
-
     const subtotal = productos.reduce((acc, prod) => acc + (prod.price * prod.cantidad), 0);
 
     return (
