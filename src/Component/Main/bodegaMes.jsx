@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
+
 
 
 export default function BodegaMes(){
@@ -28,19 +30,19 @@ export default function BodegaMes(){
                         </button>
                     </div>
                     <div className="destacados-lista">
-                        <a href="">
+                        <Link to="/productos">
                             <img src="/FlyerTiza.PNG" alt=""/>
-                        </a>
-                    </div>
-                    <div className="destacados-lista">
-                        <a href="">
+                        </Link>
+                        </div>
+                        <div className="destacados-lista">
+                        <Link to="/productos">
                             <img src="/FlyarGualta.jpeg" alt=""/>
-                        </a>
-                    </div>
-                    <div className="destacados-lista">
-                        <a href="">
+                        </Link>
+                        </div>
+                        <div className="destacados-lista">
+                        <Link to="/productos">
                             <img src="/Flyerporfiado.jpg" alt=""/>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>

@@ -3,9 +3,9 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: fit-content;
     margin: 0 auto;
-    width: 920px;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .carrito-container{
@@ -17,12 +17,11 @@
     justify-content: space-between;
     gap: 2px;
     margin-top: 8px;
-    width: 880px;
     justify-self: center;
     padding: 10px;
-    background-color: bisque;
-    color: black;
-    border: solid 2px rgb(236, 192, 14);
+    background-color: var(--color-header);
+    color: var(--color-separador);
+    border: solid 2px var(--color-separador);
     border-radius: 8px;
     justify-content: center;
 }
@@ -46,7 +45,7 @@
     object-fit: contain;
     border-radius: 4px;
     background-color: white;
-    border: solid 2px rgb(236, 192, 14);
+    border: solid 2px var(--color-separador);
     border-radius: 8px;
 }
 
@@ -58,7 +57,7 @@
 .carrito-precio {
     font-size: 12px;
     font-weight: bold;
-    color: black;
+    color: var(--color-separador);
     text-align: left; 
 }
 
@@ -67,14 +66,14 @@
     max-width: 30%;
     width: 30%;
     padding: 1px;
-    background-color: #fff3e0;
-    border: 2px solid #e0a800;
+    background-color: var(--color-header);
+    border: 2px solid var(--color-separador);
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 10px;
-    color: black;
+    color: var(--color-separador);
     text-align: center;
 }
 
@@ -92,15 +91,19 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: var(--color-separador);
     font-weight: bold;
     cursor: pointer;
 }
 
 .ir-a-pagar {
-    background-color: #e0a800;
+    background-color: var(--color-resenaPerse);
+    border: solid 1px var(--color-separador);
+    margin: 2px;
 }
 
 .vaciar-carrito {
-    background-color: #e53935;
+    background-color: var(--color-resenaPerse);
+    border: solid 1px var(--color-separador);
+    margin: 2px;
 }

@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/ProductoDetalle.css";
 import { dispararSweetConfirmar } from "../assets/sweetAlert";
+import { formatearPrecio } from "./FomatoPrecio";
+import Footer from "./Footer";
+
 
 export default function ProductoDetalle({funcionCarrito}){
     const { id } = useParams();
@@ -52,18 +55,19 @@ export default function ProductoDetalle({funcionCarrito}){
 
     return (
         <div className="detalle-container">
-        <img className="detalle-imagen" src={producto.avatar} alt={producto.name} />
-        <div className="detalle-info">
-            <h2>{producto.name}</h2>
-            <p>{producto.description}</p>
-            <p>{producto.price} $</p>
-            <div>
-                <button onClick={restarContador} className="agregar-boton">-</button>
-                <span style={{margin: "0 10px", color: "black"}}>{cantidad}</span>
-                <button onClick={sumarContador} className="agregar-boton">+</button>
-            </div>
+            <img className="detalle-imagen" src={producto.avatar} alt={producto.name} />
+            <div className="detalle-info">
+                <h2>{producto.name}</h2>
+                <p>{producto.description}</p>
+                <p>$ {formatearPrecio(producto.price)}</p>
+                <div>
+                    <button onClick={restarContador} className="agregar-boton">-</button>
+                    <span style={{margin: "0 10px", color: "black"}}>{cantidad}</span>
+                    <button onClick={sumarContador} className="agregar-boton">+</button>
+                </div>
             <button onClick={agregarAlCarrito}>Agregar al carrito</button>
-        </div>
+            </div>
+            <Footer/>
         </div>
     );
     }

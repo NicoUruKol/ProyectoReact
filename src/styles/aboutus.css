@@ -1,13 +1,11 @@
 .nosotros-perse p {
     width: 70%;
-    margin: 0 auto;
-    padding: 30px 0;
+    margin: 0 auto 30px auto;
     text-align: center;
     font-family: 'Georgia', serif;
     font-size: 1.2rem;
     line-height: 1.8;
     color: var(--color-separador);
-    margin-bottom: 30px;
 }
 
 .nosotros-1 {
@@ -31,97 +29,96 @@
     margin-bottom: 1rem;
     font-size: 2.5rem;
     font-weight: bold;
-    color: rgba(87,27,45, 0.8); 
+    color: var(--color-separador); 
 }
 
-.parrafos-nosotros{
+.parrafos-nosotros {
     font-size: 1.5rem;
     width: 60%;
-    margin-left: 20%;
-    color: rgba(87,27,45, 0.8);
+    margin: 0 auto;
+    color: var(--color-separador);
     font-weight: bold;
+    text-align: center;
 }
 
 .nosotros-2 {
     background-image: url(/02-Urugay-Tannat.png);
-    margin-top: 2rem;
-    width: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+    max-width: 100%;
     height: 10vw;
     padding: 1rem 1rem 15rem 0rem;
-    max-width: 100%;
     font-size: 1.5rem;
-    }
+}
 
-.contenedor-titulo{
-    margin-top: 5rem;
 
-    }
-
-.contenedor-img-altura{
+.contenedor-img-altura {
     width: 100%;
-    height: 55rem;
+    height: 100vh;
     overflow: hidden;
     margin-bottom: 2rem;
-    }
+}
 
-.img-altura-nosotros{
+.img-altura-nosotros {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: center 50%;
-    }
+    object-fit: cover;
+    object-position: center;
+}
+
 
 .contenedor-parrafos-uvas{
     background-image: url(./uvas-tannat.jpg);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    gap: 1rem;
-    margin-top: 2rem;
     background-size: cover;
     background-position: center;
-    height: 20vw;
-    padding: 1rem 1rem 10rem 1rem;
-    max-width: 100%;
-    font-size: 1.5rem;
-    color: var(--color-fondo);
-    align-items: center;
-    font-weight: bold;
-    }
-
-.parrafos-nosotros-uvas{
-    font-size: 1rem;
     width: 100%;
-    margin-left: 20%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: var(--color-fondo);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    place-items: center;
+
+}
+
+.parrafos-nosotros-uvas {
+    font-size: 1.2rem;
+    width: 80%;
     color: var(--color-header);
     font-weight: bold;
 }
 
 .nosotros-4{
-    background-color: #F6E5CF;
+    background-color: var(--color-header);
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto ;
+    gap: 0rem 5rem;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
     font-weight: bold;
-    }
+    width: 100%;
+}
 
 .cont-p-triptico-nosotros{
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column: 2 / 4;
     display: flex;
-    justify-content: start;
-    margin-right: 10rem;
-    font-size: 1.5rem;
-    width: 60%;
-    color: rgba(87,27,45, 0.8);
-    }
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 60%;
+    color: var(--color-separador);
+    margin: 10 auto;
+}
     
 .cont-img-triptico-nosotros{
     display: flex;
@@ -131,10 +128,12 @@
 
 .img-triptico-nosotros{
     width: 30rem;
+    padding: 3rem 0 0rem 10rem;
     }
 
 .nosotros-5{
     margin-top: 5rem;
+    margin-bottom: 5rem;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -142,4 +141,5 @@
 
 .nosotros-5 img{
     width: 100%;
+    object-fit: cover;
 }

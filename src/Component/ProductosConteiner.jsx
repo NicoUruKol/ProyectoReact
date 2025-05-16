@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import "../styles/productos.css";
 import Card from "./Card";
+import Footer from "./Footer"
 
 
-export default function ProductosContainer({ productosCarrito, setProductosCarrito, funcionCarrito }) {
+export default function ProductosContainer({funcionCarrito }) {
     const [productos, setProductos] = useState([]);
     const [cargando, setCargando] = useState(true);
     const [error, setError] = useState(null);
@@ -35,6 +36,7 @@ export default function ProductosContainer({ productosCarrito, setProductosCarri
                         funcionCarrito={funcionCarrito}
                     />
                 ))}
+                <Footer/>
             </div>
     );
 }
