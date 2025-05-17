@@ -107,6 +107,7 @@
     justify-content: center;
     font-weight: bold;
     width: 100%;
+    height: fit-content;
 }
 
 .cont-p-triptico-nosotros{
@@ -127,13 +128,13 @@
     }
 
 .img-triptico-nosotros{
-    width: 30rem;
-    padding: 3rem 0 0rem 10rem;
+    width: 25rem;
+    padding: 1rem 0 1rem 10rem;
     }
 
 .nosotros-5{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

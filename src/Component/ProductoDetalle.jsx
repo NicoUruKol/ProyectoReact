@@ -54,20 +54,24 @@ export default function ProductoDetalle({funcionCarrito}){
     if (!producto) return null;
 
     return (
-        <div className="detalle-container">
-            <img className="detalle-imagen" src={producto.avatar} alt={producto.name} />
-            <div className="detalle-info">
-                <h2>{producto.name}</h2>
-                <p>{producto.description}</p>
-                <p>$ {formatearPrecio(producto.price)}</p>
-                <div>
-                    <button onClick={restarContador} className="agregar-boton">-</button>
-                    <span style={{margin: "0 10px", color: "black"}}>{cantidad}</span>
-                    <button onClick={sumarContador} className="agregar-boton">+</button>
+        <div>
+            <div className="detalle-container">
+                <img className="detalle-imagen" src={producto.avatar} alt={producto.name} />
+                <div className="detalle-info">
+                    <h2>{producto.name}</h2>
+                    <p>{producto.description}</p>
+                    <p>$ {formatearPrecio(producto.price)}</p>
+                    <div>
+                        <button onClick={restarContador} className="agregar-boton">-</button>
+                        <span style={{margin: "0 10px", color: "black"}}>{cantidad}</span>
+                        <button onClick={sumarContador} className="agregar-boton">+</button>
+                    </div>
+                <button onClick={agregarAlCarrito}>Agregar al carrito</button>
                 </div>
-            <button onClick={agregarAlCarrito}>Agregar al carrito</button>
             </div>
-            <Footer/>
+            <div>
+                <Footer/>
+            </div>
         </div>
     );
     }

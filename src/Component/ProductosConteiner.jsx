@@ -28,6 +28,7 @@ export default function ProductosContainer({funcionCarrito }) {
     if (error) return <p>{error}</p>;
 
     return (
+        <div>
             <div className="productos-container">
                 {productos.map((producto) => (
                     <Card
@@ -36,7 +37,8 @@ export default function ProductosContainer({funcionCarrito }) {
                         funcionCarrito={funcionCarrito}
                     />
                 ))}
-                <Footer/>
             </div>
+            <Footer/>
+        </div>
     );
 }

@@ -3,7 +3,7 @@ main{
     justify-self: center; 
 }
 
-h2 {
+main h2 {
     width: 100%;
     background-color: var(--color-separador);
     color: var(--color-fondo);
